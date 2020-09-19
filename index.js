@@ -14,10 +14,10 @@ const setBackground = (url,canvas) =>{
 }
 
 const canvas = initCanvas('canvas');
-
+let mousePressed = false;
 setBackground("https://cdn.pixabay.com/photo/2017/01/13/04/56/blank-1976334_960_720.png",canvas)
 
-let mousePressed = false;
+
 
 canvas.on("mouse:move",(event)=>{
   if (mousePressed){
